@@ -10,8 +10,22 @@ import { FaLinkedinIn } from "react-icons/fa";
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+
   return (
-    <Container fluid className="footer">
+    <Container
+      fluid
+      className="footer"
+      style={{
+        position: "fixed",
+        left: 0,
+        bottom: 0,
+        width: "100%",
+        backgroundColor: "#101010",
+        color: "white",
+        textAlign: "center",
+        padding: "10px 0",
+      }}
+    >
       <Row>
         <Col md="4" className="footer-copywright">
           <h3>Designed and Developed by Movers and Shakers</h3>
@@ -20,45 +34,53 @@ function Footer() {
           <h3>Copyright © {year} HealthSight</h3>
         </Col>
         <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
+          <ul
+            className="footer-icons"
+            style={{
+              listStyleType: "none",
+              display: "flex",
+              justifyContent: "center",
+              padding: 0,
+            }}
+          >
+            <li className="social-icons" style={{ margin: "0 10px" }}>
               <a
                 href="https://github.com/HealthSight"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillGithub />
+                <AiFillGithub size={30} />
               </a>
             </li>
-            <li className="social-icons">
+            <li className="social-icons" style={{ margin: "0 10px" }}>
               <a
                 href="https://twitter.com/HealthSight"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiOutlineTwitter />
+                <AiOutlineTwitter size={30} />
               </a>
             </li>
-            <li className="social-icons">
+            <li className="social-icons" style={{ margin: "0 10px" }}>
               <a
                 href="https://www.linkedin.com/in/HealthSight/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedinIn />
+                <FaLinkedinIn size={30} />
               </a>
             </li>
-            <li className="social-icons">
+            <li className="social-icons" style={{ margin: "0 10px" }}>
               <a
                 href="https://www.instagram.com/HealthSight"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillInstagram />
+                <AiFillInstagram size={30} />
               </a>
             </li>
           </ul>

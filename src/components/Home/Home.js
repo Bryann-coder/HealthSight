@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
-import HealthData from "../../Assets/HealthData.jpg";
+import HealthData from "../../Assets/logoavectexte.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";

@@ -30,6 +30,11 @@ function Loading() {
     }
   };
 
+
+  const handleDownloadClick = () => {
+    window.open(pdf, "_blank"); // Ouvre le PDF dans un nouvel onglet
+  };
+
   return (
     <div>
       <Container fluid className="resume-section">
@@ -90,6 +95,8 @@ function Loading() {
             </Button>
           </Row>
         )}
+
+        <div style={{ height: '150px' }} />
       </Container>
     </div>
   );

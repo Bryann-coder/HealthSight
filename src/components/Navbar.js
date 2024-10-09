@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/logoavectexte.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+
 import {
   AiFillStar,
   AiOutlineHome,
@@ -71,7 +72,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                 Diagnostique
+                 Diagnostic
               </Nav.Link>
             </Nav.Item>
 
@@ -89,6 +90,8 @@ function NavBar() {
             </Nav.Item>
 
 
+
+
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -96,6 +99,18 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> Contact
+              </Nav.Link>
+            </Nav.Item>
+
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/"
+                onClick={() => updateExpanded(false)}
+              >
+                <ImBlog style={{ marginBottom: "2px" }} />
+                Promotion
               </Nav.Link>
             </Nav.Item>
 
